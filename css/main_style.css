@@ -5,6 +5,7 @@
     --light-blue-clr: #709BA6;
     --yellow-clr:     #DFA914;
     --red-clr:        #DC143C;
+    --no_clr:        rgba(255,255,255,0);
     
     --title-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --para-font: 'Courier New', Courier, monospace;
@@ -44,6 +45,25 @@ p{
 }
 
 
+.fixedbackground{
+    position: fixed;
+    top: 0; left: 0;
+    width: 110%;
+
+    z-index: -99999;
+    animation:fixedbackground_animation 20s infinite ease-in-out ;
+}
+
+@keyframes fixedbackground_animation {
+    0%,100%{
+        transform: translate(0, -100px);
+    }
+    50%{
+        transform: translate(0, 100px);
+    }
+}
+
+
 
 /* ------------------------NavBar-------------------------- */
 nav{
@@ -60,6 +80,8 @@ nav{
     display: flex; align-items: center; justify-content: center;
 
     position: relative;
+
+    user-select: none;
 }
 .star_logo{
     position: absolute;
@@ -352,6 +374,15 @@ header{
     margin-bottom: 200px;
 }
 
+.planet_sextion_background{
+    position: absolute;
+    background: linear-gradient(-45deg, var(--blue-clr) ,var(--light-blue-clr), var(--blue-clr)) ;
+
+    width:calc(100dvw - 50px); height: calc(100dvh);
+
+    opacity: 0.5;
+    z-index: -2;
+}
 
 .theplanet{
     width: 600px;
@@ -439,7 +470,6 @@ header{
     color: var(--yellow-clr);
     
 }
-
 
 
 
