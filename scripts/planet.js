@@ -1,4 +1,4 @@
-let data_planet = ["../Images/K2-18b.png", "../Images/HD_189773b.png", "../Images/TOI_849_b.png"]
+let data_planet = ["Images/K2-18b.png", "Images/HD_189773b.png", "Images/TOI_849_b.png"]
 const planet = document.querySelector(".planet_part").firstElementChild;
 
 const cards = document.querySelector(".cards_container").children;
