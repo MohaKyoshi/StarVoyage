@@ -183,21 +183,62 @@ header{
     transform: translate(-50%, -50%);
 }
 
+.stars0, .stars1{
+    position: absolute;
+    z-index: -4;
+    width: 110%;
+
+    top: calc(50%); 
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
+.fog1{
+    position: absolute;
+    z-index: -3;
+
+    top: calc(50% ); 
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.planetx{
+    position: absolute;
+    z-index: -2;
+
+    top: calc(50% + 300px); 
+    left: calc(50% - 500px);
+    transform: translate(-50%, -50%);
+}
+.moon_parallax{
+    position: absolute;
+    z-index: -2;
+
+    top: calc(50% + 100px); 
+    left: calc(50% + 800px);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.fog2{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+    top: calc(50% ); 
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
 .earth{
     position: absolute;
     z-index: -1;
 
     top: calc(50% - 100px); 
     left: calc(50% + 300px);
-    transform: translate(-50%, -50%);
-}
-
-.reddish{
-    position: absolute;
-    z-index: -2;
-
-    top: calc(50% ); 
-    left: calc(50%);
     transform: translate(-50%, -50%);
 }
 
